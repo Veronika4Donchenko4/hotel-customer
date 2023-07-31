@@ -1,4 +1,3 @@
-
 import { query, collection, onSnapshot } from 'firebase/firestore';
 import './App.css';
 import { useEffect } from 'react';

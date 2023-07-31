@@ -2,7 +2,7 @@ import { Button, Checkbox, Form, Input } from 'antd';
 import { signInWithEmailAndPassword } from 'firebase/auth'
 import { useNavigate } from "react-router-dom";
 import { auth } from '../../firebase'
-import './form.css'
+import styles from './form.module.css'
 
 const onFinishFailed = (errorInfo) => {
   console.log('Failed:', errorInfo);
@@ -19,7 +19,7 @@ export const LoginForm = () => {
     };
 
     return (
-        <div className='login-form-container'>
+        <div className= { styles.login }>
             <Form
             name="basic"
             labelCol={{
