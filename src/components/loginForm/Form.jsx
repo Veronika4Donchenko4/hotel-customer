@@ -1,6 +1,7 @@
 import { Button, Checkbox, Form, Input } from 'antd';
+import { useState } from 'react';
 import { signInWithEmailAndPassword } from 'firebase/auth'
-import { useNavigate } from "react-router-dom";
+import { useNavigate } from "react-router-dom"; 
 import { auth } from '../../firebase'
 import styles from './form.module.css'
 
@@ -13,10 +14,11 @@ export const LoginForm = () => {
 
     const onFinish = ({email,password}) => {
         signInWithEmailAndPassword(auth, email, password)
-            .then(()=>navigate( "/") )
+            .then(()=>navigate( "/"))
             .catch((error) => console.error(error))
       console.log('Success:', email,password);
     };
+
 
     return (
         <div className= { styles.login }>
