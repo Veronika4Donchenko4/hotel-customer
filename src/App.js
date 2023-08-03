@@ -1,23 +1,26 @@
-import logo from './logo.svg';
+import { query, collection, onSnapshot } from 'firebase/firestore';
 import './App.css';
+import { useEffect } from 'react';
+import {db} from './firebase'
 
 function App() {
+  useEffect(() =>{
+    const q = query(collection(db, ' employees')) 
+
+    const unsubscribe = onSnapshot(q, (querySnapshot) =>{
+      let todosArr =[]
+      querySnapshot.forEach((doc) =>{
+        todosArr.push({...doc.data(), id: doc.id})
+      });
+      console.log('todosArr: ', todosArr)
+    })
+
+    return unsubscribe
+  }, []);
+
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <h1>Hotel</h1>
     </div>
   );
 }
