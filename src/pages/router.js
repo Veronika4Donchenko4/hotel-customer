@@ -3,8 +3,6 @@ import { LoginForm } from "../components/loginForm/Form";
 import { Main } from "../components/mainPage/MainPage";
 import Layoud from "../components/Layout";
 
-
-
 export const router = createBrowserRouter([
   {
     path: "/",
