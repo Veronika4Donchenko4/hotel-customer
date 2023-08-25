@@ -2,12 +2,12 @@ import React from 'react';
 import { Layout, Space } from 'antd';
 
 const Layoud = () => {
-const { Header, Footer, Content } = Layout;
+const { Header } = Layout;
 const headerStyle = {
   height: 64,
   paddingInline: 50,
   lineHeight: '64px',
-  backgroundColor: 'grey',
+  backgroundColor: '#000059',
 };
 
 const imageStyle = {
@@ -15,18 +15,7 @@ const imageStyle = {
    height: 64,
    cursor: 'pointer'
 };
-const contentStyle = {
-  textAlign: 'center',
-  minHeight: 120,
-  lineHeight: '120px',
-  color: '#fff',
-  backgroundColor: '#108ee9',
-};
-const footerStyle = {
-  textAlign: 'center',
-  color: '#fff',
-  backgroundColor: '#7dbcea',
-};
+
 return (
   <Space
     direction="vertical"
@@ -39,8 +28,6 @@ return (
       <Header style={headerStyle}>
       <img style={imageStyle} src='/images/logo.png'></img>
       </Header>
-      <Content style={contentStyle}/>
-      <Footer style={footerStyle}/>
     </Layout>
   </Space>
 )};
