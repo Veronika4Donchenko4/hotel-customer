@@ -1,4 +1,4 @@
-import Rooms from '../components/Rooms';
+import Rooms from "./Rooms"
 
 const Home = () => {
 	return (

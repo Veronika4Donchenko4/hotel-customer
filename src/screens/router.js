@@ -1,14 +1,15 @@
 import {createBrowserRouter} from "react-router-dom";
 import { LoginForm } from "../components/loginForm/Form";
 import { Main } from "../components/mainPage/MainPage";
-import Layoud from "../components/Layout";
+import Layoud from "../components/Layout/Layout";
+import Home from "./Home";
 
 
 
 export const router = createBrowserRouter([
   {
     path: "/",
-     element: <Main />,
+     element: <Home />,
   },
   {
     path: "/login",

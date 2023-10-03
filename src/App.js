@@ -21,9 +21,19 @@ function App() {
   }, []);
 
   return (
-    <div className="App">
-      <h1>Hotel</h1>
-    </div>
+<div className='App'>
+			<AuthContextProvider>
+				<Routes>
+					<Route path='/' element={<HeaderComponent />}>
+						<Route index element={<Home />} />
+						<Route path='/login' element={<Login />} />
+						<Route path='/registration' element={<Register />} />
+						<Route path='/account' element={<Account />} />
+						<Route path='/room/:id' element={<RoomDetail />} />
+					</Route>
+				</Routes>
+			</AuthContextProvider>
+		</div>
   );
 }
 

@@ -1,7 +1,7 @@
 import React from 'react';
 import { Layout, Space } from 'antd';
 
-const Layoud = () => {
+const Loyout = () => {
 const { Header } = Layout;
 const headerStyle = {
   height: 64,
@@ -32,4 +32,4 @@ return (
   </Space>
 )};
 
-export default Layoud;
+export default Loyout;
