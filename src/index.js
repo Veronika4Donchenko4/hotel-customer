@@ -4,15 +4,15 @@ import { Provider } from 'react-redux'
 import './global.css';
 import { RouterProvider} from 'react-router';
 import { router } from './screens/router';
-import Loyoud from './components/Loyout'
+import Loyout from '../src/components/Layout/Layout'
 
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    <Loyoud>
+    <Loyout>
     <RouterProvider router={router} />
-    </Loyoud>
+    </Loyout>
   </React.StrictMode>
 );
 

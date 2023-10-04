@@ -1,23 +1,23 @@
 import {createBrowserRouter} from "react-router-dom";
 import { LoginForm } from "../components/loginForm/Form";
-import { Main } from "../components/mainPage/MainPage";
-import Layoud from "../components/Layout/Layout";
-import Home from "./Home";
+import Rooms from "./Rooms";
+import RoomDetail from "./RoomDescrip";
 
 
+// We have only 3 pages
 
 export const router = createBrowserRouter([
   {
-    path: "/",
-     element: <Home />,
-  },
-  {
     path: "/login",
-    element: <LoginForm />,
+     element: <LoginForm/>,
   },
   {
-    path: "/layoud",
-     element: <Layoud />,
+    path: "/",
+    element: <Rooms/>,
+  },
+  {
+    path: "/room/:id",
+     element: <RoomDetail />,
   },
 ]);
 
