@@ -1,5 +1,6 @@
 // Import the functions you need from the SDKs you need
 import { initializeApp } from "firebase/app";
+<<<<<<< Updated upstream
 import { collection, getFirestore, doc, setDoc } from 'firebase/firestore';
 import { getAuth } from 'firebase/auth';
 export const rooms = [
@@ -444,6 +445,11 @@ export const rooms = [
    "description": "Esse sit enim aute Lorem in eiusmod. Anim laborum exercitation fugiat deserunt laboris ea qui culpa minim adipisicing ipsum eiusmod sunt incididunt. In adipisicing anim amet ex anim nostrud amet anim. Ullamco cillum id reprehenderit qui amet Lorem magna nulla esse do. Non eu enim elit amet. Qui consequat laboris ea excepteur reprehenderit irure et anim nulla velit sint mollit consectetur eu.\n\nSunt ipsum eiusmod ea et culpa eu velit culpa nostrud enim mollit. Duis sint qui pariatur ex cupidatat dolor laboris nostrud ea tempor ut esse proident. Quis voluptate laborum ut velit voluptate ex velit elit veniam tempor id. Minim commodo eiusmod nisi aliquip deserunt enim sunt nostrud eiusmod.\n\nIrure culpa amet esse tempor nisi cillum consectetur eu esse cupidatat commodo anim dolore. Velit aute aute cillum nulla est non. Eiusmod laboris dolore ipsum excepteur magna. Mollit commodo eu sit nisi aute consectetur aute aliqua aliqua anim ea deserunt. Deserunt veniam adipisicing velit reprehenderit tempor nostrud consectetur magna veniam."
  }
 ]
+=======
+import { getFirestore } from 'firebase/firestore';
+import { getAuth } from 'firebase/auth';
+
+>>>>>>> Stashed changes
 
 
 // Your web app's Firebase configuration
@@ -458,6 +464,7 @@ const firebaseConfig = {
 // Initialize Firebase
 export const app = initializeApp(firebaseConfig);
 export const db = getFirestore(app);
+<<<<<<< Updated upstream
 export const auth = getAuth(app);
 
 export const roomsRef = collection(db, 'Rooms')
@@ -468,3 +475,6 @@ export const addData = () => {
   })
 }
 
+=======
+export const auth = getAuth(app);
+>>>>>>> Stashed changes
