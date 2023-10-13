@@ -1,13 +1,7 @@
 import { Button, Checkbox, Form, Input } from 'antd';
-import { useState } from 'react';
 import { signInWithEmailAndPassword } from 'firebase/auth'
 import { useNavigate } from "react-router-dom"; 
-<<<<<<< Updated upstream
-import { auth, addData } from '../../firebase'
-
-=======
 import { auth } from '../../firebase'
->>>>>>> Stashed changes
 import styles from './form.module.css'
 
 const onFinishFailed = (errorInfo) => {
