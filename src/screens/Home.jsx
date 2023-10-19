@@ -1,4 +1,4 @@
-import Rooms from "./Rooms"
+import Rooms from "./Rooms/Rooms"
 
 const Home = () => {
 	return (

@@ -11,10 +11,11 @@ const onFinishFailed = (errorInfo) => {
 export const LoginForm = () => {
     const navigate = useNavigate();
 
+
     const onFinish = ({email,password}) => {
         signInWithEmailAndPassword(auth, email, password)
             .then(()=>navigate( "/"))
-            .catch((error) => console.error(error))
+            .catch((error) => console.error('CUSTOM LOG: ',error))
       console.log('Success:', email,password);
     };
 

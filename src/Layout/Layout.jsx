@@ -1,7 +1,7 @@
 import React from 'react';
 import { Layout, Space } from 'antd';
 
-const Loyout = ({children}) => {
+const AppLayout = ({children}) => {
 const { Header } = Layout;
 const headerStyle = {
   height: 64,
@@ -35,4 +35,4 @@ return (
   </Space>
 )};
 
-export default Loyout;
+export default AppLayout;

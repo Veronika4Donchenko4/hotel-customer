@@ -1,7 +1,6 @@
 import {createBrowserRouter} from "react-router-dom";
-import { LoginForm } from "../components/loginForm/Form";
-import { Main } from "../components/mainPage/MainPage";
-import Layoud from "../components/Layout";
+import {LoginForm} from '../components/loginForm/Form'
+import {Main} from '../screens/MainPage'
 
 export const router = createBrowserRouter([
   {
@@ -11,10 +10,6 @@ export const router = createBrowserRouter([
   {
     path: "/login",
     element: <LoginForm />,
-  },
-  {
-    path: "/layoud",
-     element: <Layoud />,
-  },
+  }
 ]);
 

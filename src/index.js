@@ -4,7 +4,7 @@ import { Provider } from 'react-redux'
 import './global.css';
 import { RouterProvider} from 'react-router';
 import { router } from './pages/router';
-import Loyout from './Layout/Layout'
+import AppLayout from './Layout/Layout'
 import {store} from './redux'
 import {AuthContextProvider} from './context/AuthContext'
 
@@ -16,9 +16,9 @@ root.render(
     <Provider store={store}>
     <AuthContextProvider>
 
-      <Loyout>
+      <AppLayout>
         <RouterProvider router={router} />
-      </Loyout>
+      </AppLayout>
     </AuthContextProvider>
 
     </Provider>

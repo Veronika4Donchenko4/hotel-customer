@@ -1,8 +1,9 @@
 import React from "react";
-import { LoginForm } from "../loginForm/Form";
+
+import {Rooms} from './Rooms/Rooms'
 
 export const Main  = () => {
     return (
-        <LoginForm/>
+        <Rooms />
     );
 }

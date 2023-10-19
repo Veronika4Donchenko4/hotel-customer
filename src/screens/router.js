@@ -1,6 +1,6 @@
 import {createBrowserRouter} from "react-router-dom";
 import { LoginForm } from "../components/loginForm/Form";
-import Rooms from "./Rooms";
+import Rooms from "./Rooms/Rooms";
 import RoomDetail from "./RoomDescrip";
 
 
